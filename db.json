@@ -1,0 +1,83 @@
+{
+  "modules": [
+    {
+      "id": "1",
+      "name": "User Management"
+    },
+    {
+      "id": "2",
+      "name": "Sample Module 1"
+    },
+    {
+      "id": "3",
+      "name": "Sample Module 2"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "4f6b",
+      "moduleId": "2",
+      "permissionName": "Module 1 All",
+      "rwd": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    {
+      "id": "5917",
+      "moduleId": "1",
+      "permissionName": "ABC",
+      "rwd": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "f8f8",
+      "name": "Module 1",
+      "permissionIds": [
+        "4f6b",
+        "5917"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "e38e",
+      "username": "admin",
+      "name": "Administrator",
+      "email": "admin@rbac.ui",
+      "password": "admin@123",
+      "isAdmin": 1,
+      "status": "active"
+    },
+    {
+      "id": "00f2",
+      "username": "abhay.chauhan",
+      "name": "Abhay Chauhan",
+      "email": "abhay@rbac.ui",
+      "password": "abhay",
+      "roleIds": [
+        "f8f8"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "b5a7",
+      "username": "yashu08",
+      "name": "Ashutosh",
+      "email": "ashu@rbac.ui",
+      "password": "ashu",
+      "roleIds": [
+        "f8f8"
+      ],
+      "status": "active"
+    }
+  ]
+}
